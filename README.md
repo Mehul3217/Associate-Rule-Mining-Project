@@ -1,21 +1,15 @@
 # Frequent-Itemset-Mining-Project
-Frequent Itemset Data Mining Project
 Apriori Algorithm
 Strategies Implemented
 ● ​ Transaction Reduction
-○ ​ It is based on the fact that a transaction that does not contain any frequent
-k-itemsets cannot contain any frequent (k + 1) - itemsets. Therefore, such a
-transaction can be removed from further consideration.
-We sorted our database according to the length of the transactions, whenever
+○ ​ It is based on the fact that a transaction that does not contain any frequent k-itemsets cannot contain any frequent (k + 1) - itemsets. Therefore, such a
+transaction can be removed from further consideration. We sorted our database according to the length of the transactions, whenever
 in an iteration if we are going to count the k-frequent itemsets we first remove
 the transactions whose item-sets length is less than k.
-○
-Then from Lk we calculate Lk+1 frequent itemsets by generating candidates and
+○ Then from Lk we calculate Lk+1 frequent itemsets by generating candidates and
 counting them in the transaction list.
 ○
-○ ​ This
-way database size gets reduced for further iterations and thus a good
-optimisation to naive apriori algorithm.
+○ ​ This way database size gets reduced for further iterations and thus a good optimisation to naive apriori algorithm.
 ● ​ Hash Based Technique
 ○ ​ When scanning each transaction in the database to generate the frequent
 1-itemsets, L1 we can generate all the frequent 2-itemsets for each transaction,
